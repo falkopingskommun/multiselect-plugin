@@ -678,7 +678,7 @@ console.log(geometry);
       if (clickSelection || boxSelection || circleSelection || polygonSelection || bufferSelection) {
         multiselectElement = Origo.ui.Element({
           tagName: 'div',
-          cls: 'flex column'
+          cls: 'flex row'
         });
 
         multiselectButton = Origo.ui.Button({
