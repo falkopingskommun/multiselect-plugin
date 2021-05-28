@@ -561,8 +561,8 @@ const Multiselect = function Multiselect(options = {}) {
     bufferedOLFeature.getGeometry().transform('EPSG:4326', projection);
 
     // Uncomment this to draw the geometry for debugging puposes.
-    // const f = bufferedOLFeature.clone();
-    // debugLayer.addFeature(f);
+     const f = bufferedOLFeature.clone(); //falk_mod see buffer
+     debugLayer.addFeature(f); //falk_mod see buffer
 
     return bufferedOLFeature.clone();
   }
